@@ -5,8 +5,8 @@ Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Calculator',
+    component: () => import('@/components/calculator/Calculator'),
 }, ]
 
 const router = new VueRouter({
